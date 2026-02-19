@@ -1,0 +1,153 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:17.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:17.027Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:17.031Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.033Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.040Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:17.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:17.076Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:17.077Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.078Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.078Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo [none]
+[debug] [2026-02-19T08:07:17.235Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo 200
+[debug] [2026-02-19T08:07:17.236Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo {"name":"projects/surveys-61b91/billingInfo","projectId":"surveys-61b91","billingAccountName":"billingAccounts/01842D-973797-9CA949","billingEnabled":true}
+[debug] [2026-02-19T08:07:17.271Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.272Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.274Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.276Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.279Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.279Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.281Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.282Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.284Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.284Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.285Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.285Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.347Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.347Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.349Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.349Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.349Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.350Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.356Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.356Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.360Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.360Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.363Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.363Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.367Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.367Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.371Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.371Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.374Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.375Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.378Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com [none]
+[debug] [2026-02-19T08:07:17.378Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.511Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo 200
+[debug] [2026-02-19T08:07:17.514Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo {"name":"projects/surveys-61b91/billingInfo","projectId":"surveys-61b91","billingAccountName":"billingAccounts/01842D-973797-9CA949","billingEnabled":true}
+[debug] [2026-02-19T08:07:17.516Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.516Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.520Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.520Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.521Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.521Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.522Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.522Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.522Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.523Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.523Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.523Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.543Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.543Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.545Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.545Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:17.547Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.547Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.553Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.554Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.558Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.559Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.562Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.562Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.566Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.566Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.569Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.569Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.572Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-19T08:07:17.573Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.576Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com [none]
+[debug] [2026-02-19T08:07:17.576Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com  x-goog-user-project=surveys-61b91
+[debug] [2026-02-19T08:07:17.846Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com 403
+[debug] [2026-02-19T08:07:17.847Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com [omitted]
+[debug] [2026-02-19T08:07:17.867Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-19T08:07:17.868Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:17.889Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com 200
+[debug] [2026-02-19T08:07:17.894Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:17.929Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-19T08:07:17.929Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:17.938Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com 200
+[debug] [2026-02-19T08:07:17.939Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:17.957Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com 200
+[debug] [2026-02-19T08:07:17.958Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:17.993Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com 200
+[debug] [2026-02-19T08:07:17.999Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.066Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-02-19T08:07:18.069Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.096Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com 200
+[debug] [2026-02-19T08:07:18.096Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/fcm.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.146Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.147Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:18.147Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.147Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.147Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo [none]
+[debug] [2026-02-19T08:07:18.173Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com 200
+[debug] [2026-02-19T08:07:18.180Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.205Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-19T08:07:18.205Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.222Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com 200
+[debug] [2026-02-19T08:07:18.223Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.236Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-02-19T08:07:18.236Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.260Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com 403
+[debug] [2026-02-19T08:07:18.260Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseio.com [omitted]
+[debug] [2026-02-19T08:07:18.272Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-19T08:07:18.273Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.315Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com 200
+[debug] [2026-02-19T08:07:18.316Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/surveys-61b91/services/storage.googleapis.com [omitted]
+[debug] [2026-02-19T08:07:18.363Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo 200
+[debug] [2026-02-19T08:07:18.363Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo {"name":"projects/surveys-61b91/billingInfo","projectId":"surveys-61b91","billingAccountName":"billingAccounts/01842D-973797-9CA949","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.383Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.585Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:18.588Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.588Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.592Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.669Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.670Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:18.670Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.671Z] Checked if tokens are valid: true, expires at: 1771489450152
+[debug] [2026-02-19T08:07:18.674Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo [none]
+[debug] [2026-02-19T08:07:18.705Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo 200
+[debug] [2026-02-19T08:07:18.708Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo {"name":"projects/surveys-61b91/billingInfo","projectId":"surveys-61b91","billingAccountName":"billingAccounts/01842D-973797-9CA949","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.716Z] > authorizing via signed-in user (tjdierks88@gmail.com)
+[debug] [2026-02-19T08:07:18.769Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo 200
+[debug] [2026-02-19T08:07:18.769Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/surveys-61b91/billingInfo {"name":"projects/surveys-61b91/billingInfo","projectId":"surveys-61b91","billingAccountName":"billingAccounts/01842D-973797-9CA949","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-19T08:07:18.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-19T08:07:18.780Z] > authorizing via signed-in user (tjdierks88@gmail.com)
