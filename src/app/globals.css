@@ -1,50 +1,42 @@
 @import "tailwindcss";
 
 @theme {
-    --color-bg-app: #ff016b;
-    --color-bg-subtle: #0a0a0a;
-    --color-bg-panel: #111111;
-    --color-bg-card: #161616;
-    --color-border-subtle: #222;
-    --color-text-dim: #888;
+    /* Surfaces */
+    --color-bg-main: #050505;
+    --color-bg-sidebar: #0a0a0a;
+    --color-bg-card: #121212;
+    --color-bg-panel: #1a1a1a;
+    --color-bg-deep: #050505;
+
+    /* Accents */
+    --color-accent-pink: #ff49b0; /* Updated to pink */
+    --color-accent-green: #34d399;
+    --color-accent-purple: #a855f7;
+
+    /* Text */
+    --color-text-primary: #e8e8e8;
+    --color-text-dim: #d2d2d2;
+    --color-text-muted: #cacaca;
+    --color-text-deep-muted: #cacaca;
+
+    /* Legacy compatibility if needed, but we'll try to stick to the new ones */
+    --color-ui-accent: var(--color-accent-pink);
+    --color-ui-bg-app: var(--color-bg-main);
 }
 
 :root {
-    /* Surfaces (lifted dark blue/gray for separation) */
     --ui-window-gutter: 12px;
-    --surface-0: #ff1c82;
-    /* App root */
-    --surface-subtle: #0f1522;
-    /* Content */
-    --surface-1: #111a2a;
-    /* Panels */
-    --surface-2: #152033;
-    /* Cards */
-    --surface-3: #1a2740;
-    /* Elevated */
-    --surface-4: #223151;
-    /* Highest */
-    --surface-code: #0b0e14;
-    /* Editor */
+    --ui-accent: #ff49b0; /* Updated to pink */
+    --ui-bg-app: #050505;
+    --ui-bg-surface: #0a0a0a;
+    --ui-bg-panel: #121212;
 
-    /* Borders */
-    --border-subtle: rgba(255, 255, 255, 0.10);
-    --border-default: rgba(255, 255, 255, 0.14);
-    --border-strong: rgba(255, 255, 255, 0.18);
+    --ui-border: rgba(255, 255, 255, 0.08);
+    --ui-border-strong: rgba(255, 255, 255, 0.15);
 
-    /* New AppShell Tokens (v1.0) */
-    --ui-bg-app: #0b0f16;
-    --ui-bg-surface: #0f1522;
-    --ui-bg-panel: #111a2a;
-
-    --ui-border: rgba(255, 255, 255, 0.12);
-    --ui-border-strong: rgba(255, 255, 255, 0.18);
-
-    --ui-text: rgba(255, 255, 255, 0.92);
-    --ui-text-dim: rgba(255, 255, 255, 0.72);
-    --ui-text-muted: rgba(255, 255, 255, 0.55);
-
-    --ui-accent: #62a0ff;
+    --ui-text: #e8e8e8;
+    --ui-text-dim: #d2d2d2;
+    --ui-text-muted: #cacaca;
 
     --ui-pane-btn-1: color-mix(in oklab, var(--ui-accent) 75%, white 25%);
     --ui-pane-btn-2: color-mix(in oklab, var(--ui-accent) 55%, black 45%);
@@ -52,16 +44,14 @@
 }
 
 body {
-    /* Dynamic gradient background */
     background:
-        radial-gradient(1200px 800px at 30% 10%, rgba(98, 160, 255, 0.18), transparent 60%),
-        radial-gradient(900px 600px at 70% 20%, rgba(98, 160, 255, 0.10), transparent 55%),
+        radial-gradient(1200px 800px at 30% 10%, rgba(255, 73, 176, 0.08), transparent 60%), /* Updated to pink */
+        radial-gradient(900px 600px at 70% 20%, rgba(255, 73, 176, 0.05), transparent 55%), /* Updated to pink */
         var(--ui-bg-app);
     color: var(--ui-text);
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     overflow: hidden;
-    /* AppShell handles scrolling */
 }
 
 /* Scrollbar styling */
@@ -137,7 +127,7 @@ body {
 
 .ui-card {
     border: 1px solid var(--ui-border);
-    background: color-mix(in oklab, var(--ui-bg-panel) 92%, transparent 8%);
+    background: var(--ui-bg-panel);
     border-radius: 16px;
     overflow: hidden;
 }

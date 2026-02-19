@@ -1,0 +1,78 @@
+// Collection: users
+{
+    // Document ID is a cryptographically secure random ID / vectorHash
+    "userId": "string",           // same as the document ID
+    "username": "string",         // core account username (not shown to testers/ordinary users)
+    "hashedEmail": "string",      // hashed/encrypted email
+    "role": "string",             // admin | dev | employee | tester | user
+    "displayName": "string",      // public display name (must come from a generated list for minors)
+    "dateOfBirth": "timestamp",   // DOB to determine minor status
+    "isMinor": "boolean",         // derived from dateOfBirth
+    
+    // Opt‑in settings
+    "consentAOSModeration": true,
+    "persistentAiMemory": false,
+    "aggregateTrainingOptIn": false,
+    "neuralDataOptIn": false,
+    
+    // Location (coarse geolocation)
+    "city": "string",             // e.g., "Waterbury"
+    "state": "string",            // e.g., "Connecticut"
+    
+    // Gameplay
+    "gameProgress": {              // object storing game‑specific progress
+      "level": 0,
+      "experience": 0
+    },
+    "achievements": ["achievementId1", "achievementId2"],
+    
+    // Lobotomy
+    "lobotomyTimestamp": "timestamp|null",  // last time the user requested a lobotomy
+    
+    // Anonymized alias for moderation
+    "anonymizedAlias": "string",  // e.g., "Subject Alpha"
+    
+    // Parent/guardian fields (only for minors)
+    "parentalConsentStatus": "verified|null",   // pending/verified/rejected
+    "parentalConsentMethod": "credit_card|facial|kba|null",
+    "parentEmailHashed": "string|null",
+    "screenTimeLimitMinutes": 60,  // integer; null if not set or not a minor
+    
+    // Minor‑specific opt‑ins (require parental consent)
+    "persistentAiMemoryForMinor": false,
+    "aggregateTrainingOptInForMinor": false,
+    "neuralDataOptInForMinor": false,
+    
+    // Administrative metadata
+    "createdAt": "timestamp",
+    "updatedAt": "timestamp"
+  }
+  
+  // Subcollection: users/{userId}/safetyLogs
+  // Each document contains a safety incident detected by the AI Safety Agents.
+  {
+    "message": "string",             // redacted chat message or summary
+    "violationType": "string",       // e.g., bullying, PII leakage
+    "interventionLevel": "string",   // soft‑kill, hard‑kill, mute, etc.
+    "traceId": "string",             // AOS trace ID for auditing
+    "timestamp": "timestamp"
+  }
+  
+  // Subcollection: users/{userId}/rightsRequests
+  {
+    "requestType": "string",      // access | delete | lobotomy
+    "requestedBy": "string",     // user or parent
+    "requestTime": "timestamp",
+    "status": "string"           // pending | completed | rejected
+  }
+
+  
+
+
+  Security rules should enforce the role‑based visibility described in the user’s note. Admins, developers and employees may read each other’s username fields but testers and regular users should not be able to read any username. Minors’ displayNameEditable must be enforced client‑side and by rules.
+Opt‑in toggles should default to false and require explicit user or parental action. The platform must honor a user/parent’s right to delete data or request a lobotomy, so storing the lobotomyTimestamp and maintaining a secure deletion workflow is critical.  *all* users will be permitted to requested download of their stored data and request immediate deletion
+Parental consent must be tracked for under‑13 accounts. Until parentalConsentStatus is verified, the user should not be able to log in to gameplay (or access features).
+Anonymization fields ensure that moderators never see real names, emails or IP addresses; instead, they operate on de‑identified aliases.
+Coarse location only – store only the city and state; do not store GPS coordinates or street‑level addresses.
+Minors’ display names must be selected from a pre‑approved list; the displayNameEditable flag should be false for such accounts.
+Hashed identifiers and coarse geolocation should be the only personal data used for AI impact assessments, along with de‑identified chat logs.

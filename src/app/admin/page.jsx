@@ -30,10 +30,10 @@ export default function AdminDashboard() {
         <div className="lg:col-span-2 space-y-6">
           
           {/* Active Development Panel */}
-          <div className="bg-[#121212]/80 border border-white/5 rounded-xl p-5 md:p-6 backdrop-blur-sm">
+          <div className="bg-bg-card/80 border border-white/5 rounded-xl p-5 md:p-6 backdrop-blur-sm">
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-white font-light text-base md:text-lg">Live Build Status</h3>
-              <span className="text-[#7eb8da] text-[10px] md:text-xs font-mono px-2 py-1 bg-[#7eb8da]/10 rounded border border-[#7eb8da]/20">v0.9.2-beta</span>
+              <span className="text-accent-pink text-[10px] md:text-xs font-mono px-2 py-1 bg-accent-pink/10 rounded border border-accent-pink/20">v0.9.2-beta</span>
             </div>
             
             {/* Mock Timeline */}
@@ -47,21 +47,21 @@ export default function AdminDashboard() {
           {/* Quick Actions */}
           <div className="grid grid-cols-2 gap-3 md:gap-4">
             <ActionCard title="DEPLOY BUILD" icon={<Zap className="text-yellow-400" />} />
-            <ActionCard title="EDIT ASSETS" icon={<Box className="text-purple-400" />} />
+            <ActionCard title="EDIT ASSETS" icon={<Box className="text-accent-purple" />} />
           </div>
         </div>
 
         {/* THE AGENT */}
-        <div className="bg-[#121212] border border-[#7eb8da]/30 rounded-xl p-0 overflow-hidden flex flex-col h-[350px] md:h-[400px] shadow-[0_0_50px_-20px_rgba(126,184,218,0.15)] relative mb-20 md:mb-0">
+        <div className="bg-bg-card border border-accent-pink/30 rounded-xl p-0 overflow-hidden flex flex-col h-[350px] md:h-[400px] shadow-[0_0_50px_-20px_rgba(126,184,218,0.15)] relative mb-20 md:mb-0">
           {/* Agent Header */}
-          <div className="bg-[#1a1a1a] p-3 md:p-4 border-b border-white/5 flex justify-between items-center">
+          <div className="bg-bg-panel p-3 md:p-4 border-b border-white/5 flex justify-between items-center">
             <div className="flex items-center gap-2">
               <div className="relative">
-                <div className={`w-2 h-2 rounded-full ${agentActive ? 'bg-[#34d399] animate-pulse' : 'bg-red-500'}`} />
+                <div className={`w-2 h-2 rounded-full ${agentActive ? 'bg-accent-green animate-pulse' : 'bg-red-500'}`} />
               </div>
               <span className="text-white text-[10px] md:text-xs font-mono tracking-wider">DEV_AGENT_V1</span>
             </div>
-            <button onClick={() => setAgentActive(!agentActive)} className="text-[#666666] hover:text-white transition-colors">
+            <button onClick={() => setAgentActive(!agentActive)} className="text-text-muted hover:text-white transition-colors">
               <Settings className="w-4 h-4" />
             </button>
           </div>
@@ -75,12 +75,12 @@ export default function AdminDashboard() {
           </div>
 
           {/* Agent Input */}
-          <div className="p-3 bg-[#0a0a0a] border-t border-white/5">
+          <div className="p-3 bg-bg-sidebar border-t border-white/5">
             <div className="flex gap-2">
-              <div className="flex-1 bg-[#1a1a1a] rounded px-3 py-2 text-xs text-[#666666] border border-white/5 truncate">
+              <div className="flex-1 bg-bg-panel rounded px-3 py-2 text-xs text-text-muted border border-white/5 truncate">
                 Assign task...
               </div>
-              <button className="bg-[#7eb8da]/10 hover:bg-[#7eb8da]/20 border border-[#7eb8da]/20 text-[#7eb8da] rounded px-3 py-2">
+              <button className="bg-accent-pink/10 hover:bg-accent-pink/20 border border-accent-pink/20 text-accent-pink rounded px-3 py-2">
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
