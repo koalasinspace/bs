@@ -1,154 +1,133 @@
 @import "tailwindcss";
 
 @theme {
-    /* Surfaces */
-    --color-bg-main: #050505;
-    --color-bg-sidebar: #0a0a0a;
-    --color-bg-card: #121212;
-    --color-bg-panel: #1a1a1a;
-    --color-bg-deep: #050505;
+  /* Surfaces */
+  --color-bg-main:    #050505;
+  --color-bg-sidebar: #0a0a0a;
+  --color-bg-card:    #121212;
+  --color-bg-panel:   #1a1a1a;
 
-    /* Accents */
-    --color-accent-pink: #ff49b0; /* Updated to pink */
-    --color-accent-green: #34d399;
-    --color-accent-purple: #a855f7;
+  /* Accents */
+  --color-accent-pink:   #ff49b0;
+  --color-accent-green:  #34d399;
+  --color-accent-purple: #a855f7;
 
-    /* Text */
-    --color-text-primary: #e8e8e8;
-    --color-text-dim: #d2d2d2;
-    --color-text-muted: #cacaca;
-    --color-text-deep-muted: #cacaca;
-
-    /* Legacy compatibility if needed, but we'll try to stick to the new ones */
-    --color-ui-accent: var(--color-accent-pink);
-    --color-ui-bg-app: var(--color-bg-main);
+  /* Text — bumped up for legibility on dark surfaces */
+  --color-text-primary:   #e8e8e8;
+  --color-text-dim:       #d2d2d2;
+  --color-text-muted:     #b0b0b0;
+  --color-text-deep-muted:#888888;
 }
 
 :root {
-    --ui-window-gutter: 12px;
-    --ui-accent: #ff49b0; /* Updated to pink */
-    --ui-bg-app: #050505;
-    --ui-bg-surface: #0a0a0a;
-    --ui-bg-panel: #121212;
+  --ui-accent:      #ff49b0;
+  --ui-bg-app:      #050505;
+  --ui-bg-surface:  #0a0a0a;
+  --ui-bg-panel:    #121212;
 
-    --ui-border: rgba(255, 255, 255, 0.08);
-    --ui-border-strong: rgba(255, 255, 255, 0.15);
+  --ui-border:        rgba(255, 255, 255, 0.08);
+  --ui-border-strong: rgba(255, 255, 255, 0.15);
 
-    --ui-text: #e8e8e8;
-    --ui-text-dim: #d2d2d2;
-    --ui-text-muted: #cacaca;
+  --ui-text:       #e8e8e8;
+  --ui-text-dim:   #d2d2d2;
+  --ui-text-muted: #b0b0b0;
 
-    --ui-pane-btn-1: color-mix(in oklab, var(--ui-accent) 75%, white 25%);
-    --ui-pane-btn-2: color-mix(in oklab, var(--ui-accent) 55%, black 45%);
-    --ui-pane-btn-3: color-mix(in oklab, var(--ui-accent) 65%, black 35%);
+  --ui-pane-btn-1: color-mix(in oklab, var(--ui-accent) 75%, white 25%);
+  --ui-pane-btn-2: color-mix(in oklab, var(--ui-accent) 55%, black 45%);
+  --ui-pane-btn-3: color-mix(in oklab, var(--ui-accent) 65%, black 35%);
 }
 
 body {
-    background:
-        radial-gradient(1200px 800px at 30% 10%, rgba(255, 73, 176, 0.08), transparent 60%), /* Updated to pink */
-        radial-gradient(900px 600px at 70% 20%, rgba(255, 73, 176, 0.05), transparent 55%), /* Updated to pink */
-        var(--ui-bg-app);
-    color: var(--ui-text);
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    overflow: hidden;
+  background:
+    radial-gradient(1200px 800px at 30% 10%, rgba(255, 73, 176, 0.08), transparent 60%),
+    radial-gradient(900px 600px at 70% 20%, rgba(255, 73, 176, 0.05), transparent 55%),
+    var(--ui-bg-app);
+  color: var(--ui-text);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden; /* AppShell handles scrolling */
 }
 
-/* Scrollbar styling */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    border: 2px solid transparent;
-    background-clip: content-box;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
+::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 0.2); }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Utility Classes */
-.wrap-break-word {
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
+/* Utilities */
+.wrap-break-word { overflow-wrap: break-word; word-break: break-word; }
 
 .ui-window {
-    height: 100%;
-    min-height: 0;
-    padding:
-        calc(var(--ui-window-gutter) + env(safe-area-inset-top)) calc(var(--ui-window-gutter) + env(safe-area-inset-right)) calc(var(--ui-window-gutter) + env(safe-area-inset-bottom)) calc(var(--ui-window-gutter) + env(safe-area-inset-left));
+  height: 100%;
+  min-height: 0;
+  padding:
+    calc(12px + env(safe-area-inset-top))
+    calc(12px + env(safe-area-inset-right))
+    calc(12px + env(safe-area-inset-bottom))
+    calc(12px + env(safe-area-inset-left));
 }
 
-/* AppShell Semantic Chrome */
 .ui-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--ui-border);
-    background: rgba(0, 0, 0, 0.20);
-    backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--ui-border);
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(10px);
 }
 
 .ui-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 10px;
-    font-size: 12px;
-    border-radius: 10px;
-    border: 1px solid var(--ui-border);
-    background: rgba(255, 255, 255, 0.04);
-    color: var(--ui-text);
-    cursor: pointer;
-    transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--ui-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ui-text);
+  cursor: pointer;
+  transition: all 0.2s;
 }
-
 .ui-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--ui-border-strong);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--ui-border-strong);
 }
-
 .ui-btn-primary {
-    border-color: color-mix(in oklab, var(--ui-accent) 35%, var(--ui-border) 65%);
-    background: color-mix(in oklab, var(--ui-accent) 18%, rgba(255, 255, 255, 0.04) 82%);
+  border-color: color-mix(in oklab, var(--ui-accent) 35%, var(--ui-border) 65%);
+  background: color-mix(in oklab, var(--ui-accent) 18%, rgba(255, 255, 255, 0.04) 82%);
 }
 
 .ui-card {
-    border: 1px solid var(--ui-border);
-    background: var(--ui-bg-panel);
-    border-radius: 16px;
-    overflow: hidden;
+  border: 1px solid var(--ui-border);
+  background: color-mix(in oklab, var(--ui-bg-panel) 92%, transparent 8%);
+  border-radius: 16px;
+  overflow: hidden;
 }
-
 .ui-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--ui-border);
-    background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--ui-border);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .ui-codeblock {
-    border: 1px solid var(--ui-border);
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    overflow: hidden;
+  border: 1px solid var(--ui-border);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .ui-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
